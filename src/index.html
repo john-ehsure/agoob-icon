@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my-project</title>
+    <script type="text/javascript" src="./../node_modules/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="./../dist/vue-zsq-icon.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <vue-zsq-icon :size="size" :icon-name="name"></vue-zsq-icon>
+    </div>
+    <script type="text/javascript">
+      new Vue({
+        el:'#app',
+
+        data: function() {
+          return { 
+              name:'auto',
+              size:16,
+          }
+        },
+        methods:{
+
+        }
+      })
+    </script>
+  </body>
+</html>
